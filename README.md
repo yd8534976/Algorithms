@@ -16,8 +16,11 @@
     (LinkedList implementation)
   
     (2-2) Randomized Queues:
-    (no comments)
     (generics)
     (iterators)
     (ResizingArray implementation)
+    
+    (2-3) Permutation:
+    (using Randomized Queues)
+    
  
