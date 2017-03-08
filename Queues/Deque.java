@@ -6,12 +6,12 @@ import java.util.NoSuchElementException;
  */
 public class Deque<Item> implements Iterable<Item> {
     private class Node{
-        public Node(Item it){
+        protected Node(Item it){
             item=it;
         }
-        public Item item=null;
-        public Node next=null;
-        public Node previous=null;
+        protected Item item=null;
+        protected Node next=null;
+        protected Node previous=null;
     }
     private Node first=null;
     private Node last=null;
@@ -68,7 +68,9 @@ public class Deque<Item> implements Iterable<Item> {
         N--;
         if (N==0){
             last=null;
+            return item;
         }
+        first.previous=null;
         return item;
     }
     public Item removeLast(){
