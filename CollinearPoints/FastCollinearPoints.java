@@ -31,21 +31,26 @@ public class FastCollinearPoints {
         for (int j = 0; j < length - 3; j++) {
             Point center;
             center = points_copy[j];
+
+            /* new array bySlopes: Points array sorted by slope from center */
             Point[] bySlopes = new Point[length - 1];
             int numberOfSlopes = 0;
             for (int i = 0; i < length; i++) {
-                if ((center.compareTo(points_copy[i]) == -1) && (i != j)) {
+                if ((center.compareTo(points_copy[i]) < 0) && (i != j)) {
                     bySlopes[numberOfSlopes] = points_copy[i];
                     numberOfSlopes++;
                 }
             }
             Arrays.sort(bySlopes, 0, numberOfSlopes, center.slopeOrder());
+
+
+            /* */
             int head = 0;
             int tail = 1;
             int max = 0;
             while (head < numberOfSlopes - 2) {
                 while (Double.compare(center.slopeTo(bySlopes[head]), center.slopeTo(bySlopes[tail])) == 0) {
-                    if (bySlopes[max].compareTo(bySlopes[tail]) == -1) {
+                    if (bySlopes[max].compareTo(bySlopes[tail]) < 0) {
                         max = tail;
                     }
                     tail++;
@@ -53,7 +58,6 @@ public class FastCollinearPoints {
                         break;
                     }
                 }
-                //System.out.println("head:"+head+"--->"+tail);
                 if (tail - head > 2) {
                     Boolean canAdd = true;
                     for (int i = 0; i < count; i++) {
@@ -67,7 +71,7 @@ public class FastCollinearPoints {
                         addedslope[count] = center.slopeTo(bySlopes[max]);
                         wasMax[count] = bySlopes[max];
                         count++;
-                        if (count == temps.length) {
+                        if (count == temps.length) {//resizing array
                             LineSegment[] newTemps = new LineSegment[temps.length * 2];
                             double[] newaddedslope = new double[addedslope.length * 2];
                             Point[] newwasMax = new Point[wasMax.length * 2];
