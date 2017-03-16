@@ -25,16 +25,16 @@
     
 (3) CollinearPoints:(http://coursera.cs.princeton.edu/algs4/assignments/collinear.html ) 
 
-(Pattern Recognition)
+    (Pattern Recognition)
 
-(3-1) Points:
-(implements Comparable)
-(Comparator by slope)
+    (3-1) Points:
+    (implements Comparable)
+    (Comparator by slope)
 
-(3-2) BruteCollinearPoints:
-(Brute force)
-(Data type immutable)
+    (3-2) BruteCollinearPoints:
+    (Brute force)
+    (Data type immutable)
 
-(3-3) FastCollinearPoints:
-(Sorting-based solution)
-(not optimized implementation)
+    (3-3) FastCollinearPoints:
+    (Sorting-based solution)
+    (not optimized implementation)
