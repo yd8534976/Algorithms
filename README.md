@@ -45,3 +45,13 @@
     (PriorityQueue)
     (Game Tree)
 
+## (5) Kd-Trees:(http://coursera.cs.princeton.edu/algs4/assignments/kdtree.html )
+
+	(2d Trees)
+	(Range Search)
+	(Nearest Neighbor Search)
+	(red-black BST)
+	(no comments)
+
+
+
