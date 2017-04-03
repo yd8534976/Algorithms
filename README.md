@@ -1,12 +1,14 @@
 # Algorithms
 
-## (1) Percolation:（http://coursera.cs.princeton.edu/algs4/assignments/percolation.html ）
+## (1) Percolation:
+  （http://coursera.cs.princeton.edu/algs4/assignments/percolation.html ）
 
     (no comments)
     (Monte Carlo simulation)
     (uf2 is a solution for backwash problem)
 
-## (2) Queues:(http://coursera.cs.princeton.edu/algs4/assignments/queues.html )
+## (2) Queues:
+   (http://coursera.cs.princeton.edu/algs4/assignments/queues.html )
 
     (2-1) Deques:
     (no comments)
@@ -23,7 +25,8 @@
     (2-3) Permutation:
     (using Randomized Queues)
     
-## (3) CollinearPoints:(http://coursera.cs.princeton.edu/algs4/assignments/collinear.html ) 
+## (3) CollinearPoints:
+   (http://coursera.cs.princeton.edu/algs4/assignments/collinear.html ) 
 
     (Pattern Recognition)
 
@@ -39,13 +42,15 @@
     (Sorting-based solution)
     (not optimized implementation)
 
-## (4) 8-Puzzle:(http://coursera.cs.princeton.edu/algs4/assignments/8puzzle.html )
+## (4) 8-Puzzle:
+   (http://coursera.cs.princeton.edu/algs4/assignments/8puzzle.html )
 
     (A* Search Algorithm)
     (PriorityQueue)
     (Game Tree)
 
-## (5) Kd-Trees:(http://coursera.cs.princeton.edu/algs4/assignments/kdtree.html )
+## (5) Kd-Trees:
+   (http://coursera.cs.princeton.edu/algs4/assignments/kdtree.html )
 
 	(2d Trees)
 	(Range Search)
